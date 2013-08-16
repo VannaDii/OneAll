@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- For more information see "How to: Customize the Code Analysis Dictionary" @ http://msdn.microsoft.com/en-us/library/bb514188.aspx -->
+<Dictionary>
+	<Words>
+		<Unrecognized>
+			<!--<Word></Word>-->
+		</Unrecognized>
+		<Recognized>
+			<!--<Word></Word>-->
+			<Word>Mvc</Word>
+			<Word>Aspnet</Word>
+		</Recognized>
+		<Deprecated>
+			<!--<Term PreferredAlternate=""></Term>-->
+		</Deprecated>
+		<Compound>
+			<!--<Term CompoundAlternate=""></Term>-->
+		</Compound>
+		<DiscreteExceptions>
+			<!--<Term></Term>-->
+			<Term>RePublish</Term>
+			<Term>ReSharing</Term>
+			<Term>UUID</Term>
+		</DiscreteExceptions>
+	</Words>
+	<Acronyms>
+		<CasingExceptions>
+			<!--<Acronym></Acronym>-->
+			<Acronym>UUID</Acronym>
+			<Acronym>API</Acronym>
+			<Acronym>Re</Acronym>
+		</CasingExceptions>
+	</Acronyms>
+</Dictionary>

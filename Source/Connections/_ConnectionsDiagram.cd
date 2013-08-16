@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="OneAll.Connections.Connection">
+    <Position X="8.75" Y="0.5" Width="2.75" />
+    <Members>
+      <Field Name="_connectionToken" Hidden="true" />
+      <Field Name="_dateString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAABAAAAAAQAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Connections\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OneAll.Connections.PlugInData">
+    <Position X="4.75" Y="4" Width="2.25" />
+    <Members>
+      <Field Name="_action" Hidden="true" />
+      <Field Name="_operation" Hidden="true" />
+      <Field Name="_reason" Hidden="true" />
+      <Field Name="_status" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAEAAAAAAIAAAAABAAAAAAAAAAAAAGAgAAAAAQ=</HashCode>
+      <FileName>Connections\PlugInData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OneAll.Connections.ConnectionDetail">
+    <Position X="4.75" Y="0.5" Width="2.75" />
+    <Members>
+      <Field Name="_action" Hidden="true" />
+      <Field Name="_connection" Hidden="true" />
+      <Field Name="_plugin" Hidden="true" />
+      <Field Name="_user" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Connection" Type="OneAll.Connections.Connection" FixedFromPoint="true">
+      <Path>
+        <Point X="7.5" Y="0.812" />
+        <Point X="8.75" Y="0.812" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="User" Type="OneAll.Connections.ConnectionUser" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="1" />
+        <Point X="7.875" Y="1" />
+        <Point X="7.875" Y="2.375" />
+        <Point X="8.75" Y="2.375" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAEAAAAAAAAAAAAgAIAAAAAAgABABAQ=</HashCode>
+      <FileName>Connections\ConnectionDetail.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Connection" />
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OneAll.Connections.ConnectionList">
+    <Position X="0.5" Y="1.75" Width="3.75" />
+    <Members>
+      <Field Name="_entries" Hidden="true" />
+      <Field Name="_paginated" Hidden="true" />
+      <Field Name="_pagination" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Entries" Type="OneAll.Connections.ConnectionListEntry" FixedToPoint="true">
+      <Path>
+        <Point X="0.75" Y="3.175" />
+        <Point X="0.75" Y="3.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.984" Y="0.133" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAACEAAAAAAAAAIAAAgAAAAAAAAAAACAA=</HashCode>
+      <FileName>Connections\ConnectionList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Entries" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="OneAll.Connections.ConnectionListEntry">
+    <Position X="0.5" Y="3.75" Width="2.75" />
+    <Members>
+      <Field Name="_callBackURI" Hidden="true" />
+      <Field Name="_connectionToken" Hidden="true" />
+      <Field Name="_dateCreationString" Hidden="true" />
+      <Field Name="_status" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAEAAAABAAAAAAQAAAAAAAAAIAAAIAIAAAAIAA=</HashCode>
+      <FileName>Connections\ConnectionListEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OneAll.Connections.ConnectionListResult" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Members>
+      <Field Name="_connections" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Connections" Type="OneAll.Connections.ConnectionList" FixedFromPoint="true">
+      <Path>
+        <Point X="0.75" Y="1.191" />
+        <Point X="0.75" Y="1.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.065" Y="0.12" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAABAA=</HashCode>
+      <FileName>Connections\ConnectionListResult.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Connections" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OneAll.Connections.ConnectionUser">
+    <Position X="8.75" Y="2.25" Width="2.25" />
+    <Members>
+      <Field Name="_identity" Hidden="true" />
+      <Field Name="_userToken" Hidden="true" />
+      <Field Name="_uuid" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAEAAAAAAAAAAAADAAAEAAAAAAABA=</HashCode>
+      <FileName>Connections\ConnectionUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OneAll.Connections.PlugIn">
+    <Position X="4.75" Y="2.25" Width="2.25" />
+    <Members>
+      <Field Name="_data" Hidden="true" />
+      <Field Name="_key" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Data" Type="OneAll.Connections.PlugInData" FixedFromPoint="true">
+      <Path>
+        <Point X="4.938" Y="3.483" />
+        <Point X="4.938" Y="4" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.627" Y="0.12" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAQAAACAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connections\PlugIn.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Data" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

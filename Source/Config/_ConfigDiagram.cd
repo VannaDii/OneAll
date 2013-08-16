@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="OneAll.Config.AuthConfigElement" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="3.5" />
+    <Members>
+      <Field Name="_link" Hidden="true" />
+      <Field Name="_logOn" Hidden="true" />
+      <Field Name="_providers" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Link" Type="OneAll.Config.DisplayConfigElement" FixedToPoint="true">
+      <Path>
+        <Point X="1.75" Y="3.441" />
+        <Point X="1.75" Y="4" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.617" Y="0.12" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="LogOn" Type="OneAll.Config.DisplayConfigElement" FixedFromPoint="true">
+      <Path>
+        <Point X="0.812" Y="3.441" />
+        <Point X="0.812" Y="4" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.753" Y="0.131" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Providers" Type="OneAll.Config.ProviderConfigElement">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-2.95" Y="0.11" Height="0.182" Width="2.82" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAEAAAABAAAAAAAAAAAAAAEAAAASAAAAAA=</HashCode>
+      <FileName>Config\AuthConfigElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Link" />
+      <Property Name="LogOn" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Providers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="OneAll.Config.ConfigSection">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <Members>
+      <Field Name="_auth" Hidden="true" />
+      <Field Name="_domain" Hidden="true" />
+      <Field Name="_privateKey" Hidden="true" />
+      <Field Name="_publicKey" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAIJAAAQAAAEAAAAAAAAQAAgAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Config\ConfigSection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Authentication" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OneAll.Config.ConfigValidator">
+    <Position X="9.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Config\ConfigValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OneAll.Config.DisplayConfigElement">
+    <Position X="0.5" Y="4" Width="2" />
+    <Members>
+      <Field Name="_callback" Hidden="true" />
+      <Field Name="_height" Hidden="true" />
+      <Field Name="_theme" Hidden="true" />
+      <Field Name="_width" Hidden="true" />
+      <Method Name="AsSettings" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAABACAAAAQAAAAAEAAABAAAAAQAAIAAAAAQAA=</HashCode>
+      <FileName>Config\DisplayConfigElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OneAll.Config.DisplaySettings">
+    <Position X="6.75" Y="3.5" Width="2" />
+    <Members>
+      <Field Name="_callback" Hidden="true" />
+      <Field Name="_height" Hidden="true" />
+      <Field Name="_theme" Hidden="true" />
+      <Field Name="_width" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAABACAAAAQAAAAAEAAABAAAAAQAAAAAAAAQAA=</HashCode>
+      <FileName>Config\DisplaySettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OneAll.Config.ProviderConfigElement">
+    <Position X="2.75" Y="4" Width="2" />
+    <Members>
+      <Field Name="_name" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Config\ProviderConfigElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OneAll.Config.ProviderConfigElementCollection" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="5.75" Width="4" />
+    <Members>
+      <Method Name="AllNames" Hidden="true" />
+      <Method Name="ICollection&lt;ProviderConfigElement&gt;.Add" Hidden="true" />
+      <Method Name="ICollection&lt;ProviderConfigElement&gt;.Clear" Hidden="true" />
+      <Method Name="ICollection&lt;ProviderConfigElement&gt;.Contains" Hidden="true" />
+      <Method Name="ICollection&lt;ProviderConfigElement&gt;.CopyTo" Hidden="true" />
+      <Property Name="ICollection&lt;ProviderConfigElement&gt;.Count" Hidden="true" />
+      <Property Name="ICollection&lt;ProviderConfigElement&gt;.IsReadOnly" Hidden="true" />
+      <Method Name="ICollection&lt;ProviderConfigElement&gt;.Remove" Hidden="true" />
+      <Method Name="IEnumerable&lt;ProviderConfigElement&gt;.GetEnumerator" Hidden="true" />
+      <Method Name="System.Collections.IEnumerable.GetEnumerator" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ACBDAAIAAAgAIAAAAICIAAAAACABAABAAAIAACAAAAA=</HashCode>
+      <FileName>Config\ProviderConfigElementCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OneAll.Config.Settings">
+    <Position X="4.75" Y="0.5" Width="3" />
+    <Members>
+      <Field Name="_config" Hidden="true" />
+      <Field Name="_credential" Hidden="true" />
+      <Field Name="_domain" Hidden="true" />
+      <Field Name="_instance" Hidden="true" />
+      <Field Name="_linkDisplay" Hidden="true" />
+      <Field Name="_loginDisplay" Hidden="true" />
+      <Field Name="_padLock" Hidden="true" />
+      <Field Name="_privateKey" Hidden="true" />
+      <Field Name="_providers" Hidden="true" />
+      <Field Name="_publicKey" Hidden="true" />
+      <Method Name="GetInstance" Hidden="true" />
+      <Method Name="InitializeConfig" Hidden="true" />
+      <Method Name="InitializeValues" Hidden="true" />
+      <Method Name="SetCredential" Hidden="true" />
+      <Method Name="Settings" Hidden="true" />
+    </Members>
+    <AssociationLine Name="DisplayLink" Type="OneAll.Config.DisplaySettings" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="2.312" />
+        <Point X="8.375" Y="2.312" />
+        <Point X="8.375" Y="3.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.005" Y="0.143" Height="0.182" Width="0.911" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="DisplayLogOn" Type="OneAll.Config.DisplaySettings" FixedFromPoint="true">
+      <Path>
+        <Point X="7.062" Y="2.565" />
+        <Point X="7.062" Y="3.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.15" Y="0.154" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQMIJUAgcAEAACAAACAAAQABgAAAAAAQEAAAAIAAAA=</HashCode>
+      <FileName>Config\Settings.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DisplayLink" />
+      <Property Name="DisplayLogOn" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
