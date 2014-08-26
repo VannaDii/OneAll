@@ -38,9 +38,9 @@ namespace OneAll.ASPNET
 					if (responseUser != null && responseUser.Result != null && responseUser.Result.Data != null)
 					{
 						User oneAllUser = responseUser.Result.Data.User;
-						if (oneAllUser != null && oneAllUser.Identities != null && oneAllUser.Identities.Identity != null)
+						if (oneAllUser != null && oneAllUser.Identities != null && oneAllUser.Identities[0] != null)
 						{
-							Identity oneAllId = oneAllUser.Identities.Identity.FirstOrDefault();
+							Identity oneAllId = oneAllUser.Identities[0];
 							if (oneAllId != null)
 							{
 								_labelSocialName.Text = oneAllId.DisplayName;
