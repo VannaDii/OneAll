@@ -1,0 +1,55 @@
+﻿{
+    "response": {
+        "request": {
+            "date": "Tue, 13 Sep 2011 11:24:28 +0200",
+            "resource": "/users/2cec711d-ca14-4472-98c8-ca74432bc2d3.json",
+            "status": {
+                "flag": "success",
+                "code": 200
+            }
+        },
+        "result": {
+            "data": {
+                "user": {
+                    "user_token": "2cec711d-ca14-4472-98c8-ca74432bc2d3",
+                    "date_creation": "Tue, 1 Sep 2011 11:01:12 +0200",
+                    "date_last_login": "Tue, 13 Sep 2011 01:05:07 +0200",
+                    "num_logins": "64",
+                    "identities": [
+                        {
+                            "identity_token": "cd3bd13b-b393-4d6c-a7f6-950b4c47938f",
+                            "provider": "twitter",
+                            "id": "http://twitter.com/ExampleUser",
+                            "displayName": "Firstname Lastname",
+                            "name": {
+                                "formatted": "Firstname Lastname"
+                            },
+                            "gender": "male",
+                            "utcOffset": "2:00"
+                        },
+                        {
+                            "identity_token": "3ab5257b-ba2b-4242-a7f6-950b4c47938f",
+                            "provider": "facebook",
+                            "id": "http://www.facebook.com/profile.php?id=1046121518",
+                            "displayName": "Firstname Lastname",
+                            "name": {
+                                "formatted": "Firstname Lastname",
+                                "givenName": "Firstname",
+                                "familyName": "Lastname"
+                            },
+                            "gender": "male",
+                            "birthday": "01/01/1980",
+                            "utcOffset": "2:00",
+                            "emails": [
+                                {
+                                    "value": "email@example.com",
+                                    "is_verified": "true"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
