@@ -647,7 +647,7 @@ namespace OneAll
 		/// <code lang="cs">
 		/// <![CDATA[
 		/// Guid userToken = new Guid("D2B5F3A5-3834-4EBA-B76F-369EDD01F499"); // This is a fictitious token and will return an error.
-		/// Response<UserResult> response = OneAllAPI.Default.UserReadDetails(userToken);
+		/// Response<ContactsResult> response = OneAllAPI.Default.UserReadContacts(userToken);
 		/// 
 		/// if (response != null && response.Request != null && response.Request.Status != null && 
 		///		(response.Request.Status.Code.Equals(200) || response.Request.Status.Code.Equals(207)) && // 207 is a multi-status, see OneAll documentation for details
@@ -666,7 +666,7 @@ namespace OneAll
 		/// }
 		/// else if (response != null && response.Request != null && response.Request.Status != null)
 		/// {
-		///     Console.WriteLine("{0}: {1}", response.Code, response.Info);
+		///     Console.WriteLine("{0}: {1}", response.Request.Status.Code, response.Request.Status.Info);
 		/// }
 		/// ]]>
 		/// </code>
